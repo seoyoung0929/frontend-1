@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>block & inline | html</title>
+        <style>
+            #red {
+                background-color: rebeccapurple;
+            }
+            .red {
+                background-color: red;
+            }
+            .yellow {
+                background-color: yellow;
+            }
+            .pink {
+                background-color: pink;
+            }
+            .green {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>html</h1>
+        <h2>block & inline</h2>
+
+        <!-- block : 자신의 영역(블록)이 있음, 기본값이 100%, 밑으로 배치, 가로세로 값을 지정할 수 있음 -->
+        <div id="red" class="red">block</div>
+        <div id="yellow" class="yellow">block</div>
+
+        <!-- inline : 옆으로 배치 -->
+        <!-- 한글자 -->
+        <!-- inline 형태 그대로 쓰는 경우는 많이 없음 -->
+        <span class="pink">가</span>
+        <span class="green" style="display: block; width: 500px">나</span>
+
+        <!-- 스타일 지정할때는 왠만하면 id는 쓰지말자 -->
+    </body>
+</html>
