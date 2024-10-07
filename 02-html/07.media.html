@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>media | html</title>
+    </head>
+    <body>
+        <h1>html</h1>
+        <h2>media</h2>
+
+        <!-- video -->
+        <video src="./images/mov_bbb.mp4" controls autoplay muted loop></video>
+        <video controls width="320" height="240">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            <source src="./images/mov_bbb.webm" type="video/webm" />
+            <!-- video 태그 안에 바로 넣어도 되고, 두개 이상일 경우 안전하게 source 태그를 써도 됨 -->
+        </video>
+
+        <!-- audio -->
+        <audio src="./images/horse.mp3" controls></audio>
+
+        <!-- youtube -->
+        <iframe
+            width="1250"
+            height="703"
+            src="https://www.youtube.com/embed/S4IHzX_71iI?autoplay=1&mute=1"
+            title="[공식] 4K+Drone 서울세계불꽃축제 한화 다시보기 | 한화와 함께하는 서울세계불꽃축제 2024"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+        ></iframe>
+    </body>
+</html>
