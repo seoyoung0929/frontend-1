@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>font | css</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            /* reset */
+            html,
+            body {
+                font-size: 1rem;
+                /* font-size: 1rem; */
+                /* 크롬브라우저가 사용하는 기본값이 1rem */
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>css</h1>
+        <h2>font</h2>
+
+        <!-- font family : 글꼴 -->
+        <p class="txt1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem excepturi reprehenderit inventore.
+            Deserunt nesciunt sit quidem molestiae, nostrum dolorum quod facere odit ipsa id repellendus ad ex ratione
+            architecto laboriosam?
+        </p>
+        <style>
+            .txt1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
+        </style>
+
+        <!-- font size -->
+        <!-- 절대 사이즈 : px-->
+        <p class="txt2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, voluptatibus!</p>
+        <style>
+            .txt2 {
+                font-size: 1.25rem;
+            }
+        </style>
+
+        <!--상대 사이즈 : rem, em -->
+        <p class="txt3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, culpa?</p>
+        <style>
+            .txt3 {
+                font-size: 1.25em;
+            }
+        </style>
+
+        <ul class="list1">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li><b>Lorem</b>, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing.</li>
+        </ul>
+        <style>
+            .list1 li:first-child {
+                font-size: 16px;
+            }
+            .list1 li:nth-child(2) {
+                font-size: 0.875em;
+            }
+            .list1 li:nth-child(2) b {
+                font-size: 2em;
+            }
+            .list1 li:nth-child(3) {
+                font-size: 1.75em;
+            }
+            .list1 li:nth-child(4) {
+                font-size: 2em;
+            }
+            .list1 li:nth-child(4) b {
+                font-size: 2rem;
+            }
+        </style>
+
+        <!-- em : 부모를 기준으로 배수를 계산 
+        ex) 부모 폰트가 20px면 1em = 20px / 2em = 40px-->
+
+        <!-- rem : html, body를 기준으로 배수를 계산 
+        기준이 변경되지 않는다.-->
+
+        <!-- 결론 : rem을 쓰자 -->
+
+        <!-- vw : viewport 기준 -->
+        <p class="txt4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta unde facilis impedit cumque? Quod ea vitae
+            laboriosam earum. Culpa harum cum nemo voluptates, iusto aut numquam? Consequatur animi ut natus.
+        </p>
+        <style>
+            .txt4 {
+                font-size: 5vw;
+                font-family: 'Edu AU VIC WA NT Guides', cursive;
+                color: red;
+            }
+        </style>
+    </body>
+</html>

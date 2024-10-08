@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>background : css</title>
+    </head>
+    <body style="height: 300vh">
+        <h1>css</h1>
+        <h2>background</h2>
+
+        <!-- background-color -->
+        <div class="box1"></div>
+        <style>
+            .box1 {
+                height: 300px;
+                /* background-color: rgba(255, 0, 0, 0.5);
+                background-image: url('./images/kakao.png');
+                background-repeat: no-repeat;
+                background-position: 50% 50%; */
+                background: rgba(255, 0, 0, 0.5) url('./images/kakao.png') no-repeat 100% 50% / contain;
+            }
+        </style>
+
+        <div class="box2"></div>
+        <style>
+            .box2 {
+                height: 500px;
+                /* background-color: aquamarine;
+                background-image: url('./images/bg-a.jpg');
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                background-attachment: fixed; */
+                background: #79c454 url('./images/bg-a.jpg') no-repeat 100% 0 /*fixed*/;
+                background-size: cover;
+            }
+        </style>
+    </body>
+</html>
